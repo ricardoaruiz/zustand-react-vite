@@ -1,0 +1,60 @@
+@import './variables';
+
+@mixin title-component {
+  font-size: $font-size-normal;
+  text-align: center;
+  color: $color-text-black;
+}
+
+@mixin component-wrapper {
+  background-color: $color-counter-bg;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  flex: 1 0 100px;
+  padding: 10px;
+  box-shadow: $box-shadow;
+  color: $color-text-black;
+  border-radius: $border-radius;
+}
+
+@mixin button-component {
+  border: none;
+  border-radius: $border-radius;
+  padding: 20px;
+  color: $color-text-white;
+  cursor: pointer;
+  opacity: 0.6;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-md;
+  background-color: $color-success;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    pointer-events: none;
+    cursor: default;
+  }
+
+  &.on {
+    background-color: $color-success;
+  }
+
+  &.off {
+    background-color: $color-error;
+  }
+}
+
+@mixin text-component {
+  font-weight: $font-weight-bold;
+  font-size: $font-size-lg
+}

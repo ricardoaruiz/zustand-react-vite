@@ -1,0 +1,31 @@
+@import './styles/variables';
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.counter-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  background-color: tomato;
+  padding: 20px;
+  box-shadow: 2px 4px 6px $box-shadow;
+  border-radius: 4px;
+}
+
+.other-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  background-color: burlywood;
+  padding: 20px;
+  box-shadow: $box-shadow;
+  border-radius: $color-text-black;
+}

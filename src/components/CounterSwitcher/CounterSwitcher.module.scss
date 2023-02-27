@@ -1,0 +1,14 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.wrapper {
+  @include component-wrapper;
+
+  & h2 {
+    @include title-component;
+  }
+
+  & button {
+    @include button-component;
+  }
+}
