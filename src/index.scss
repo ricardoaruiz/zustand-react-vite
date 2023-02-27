@@ -1,7 +1,7 @@
 @import './styles/variables';
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: $font-weight-regular;
 
   color-scheme: light dark;
@@ -11,6 +11,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
 
 body {

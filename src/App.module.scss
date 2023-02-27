@@ -17,7 +17,7 @@
   background-color: tomato;
   padding: 20px;
   box-shadow: 2px 4px 6px $box-shadow;
-  border-radius: 4px;
+  border-radius: $border-radius;
 }
 
 .other-container {
@@ -27,5 +27,5 @@
   background-color: burlywood;
   padding: 20px;
   box-shadow: $box-shadow;
-  border-radius: $color-text-black;
+  border-radius: $border-radius;
 }
