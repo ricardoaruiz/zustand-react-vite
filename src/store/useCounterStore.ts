@@ -15,8 +15,8 @@ type CounterStore = {
   actions: CounterActions
 }
 
-const TURNED_ON_MESSAGE = 'The counter is turned on'
-const TURNED_OFF_MESSAGE = 'The counter is turned off'
+const TURNED_ON_MESSAGE = 'The counter is on'
+const TURNED_OFF_MESSAGE = 'The counter is off'
 
 export const useCounterStore = create<CounterStore>()(
   persist(

@@ -12,7 +12,7 @@
     @include text-component;
   }
 
-  button {
+  & button {
     @include button-component;
   }
 }

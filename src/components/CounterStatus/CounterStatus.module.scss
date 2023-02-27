@@ -1,29 +1,16 @@
 @import '../../styles/variables';
+@import '../../styles/mixins';
 
 .wrapper {
-  all: unset;
-  background-color: $color-counter-bg;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  flex: 1 0 100px;
-  color: $color-text-black;
-  padding: 10px;
-
-  box-shadow: $box-shadow;
-  border-radius: $border-radius;
+  @include component-wrapper;
 
   & h2 {
-    font-size: $font-size-normal;
-    text-align: center;
+    @include title-component;
   }
 
   & p {
-    font-weight: $font-weight-bold;
-    font-size: $font-size-md;
-    text-align: center;
+    @include text-component;
+    font-size: $font-size-normal;
   }
 
   &.on p {
